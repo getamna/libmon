@@ -1,0 +1,26 @@
+{
+    "name": "libmon",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "scripts": {
+        "watch": "rollup -c -w",
+        "test": "mocha test"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "axios": "^0.21.1"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^15.1.0",
+        "@rollup/plugin-node-resolve": "^9.0.0",
+        "@rollup/plugin-typescript": "^6.0.0",
+        "@types/chrome": "0.0.124",
+        "mocha": "^8.3.1",
+        "rollup": "^2.41.0",
+        "rollup-plugin-terser": "^7.0.2",
+        "tslib": "^2.0.1",
+        "typescript": "^4.0.3"
+    }
+}
