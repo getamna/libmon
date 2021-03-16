@@ -6,7 +6,7 @@ interface LibmonOptions {
   worksOffline: boolean
 }
 
-const BASE_URL = `https://pvxtcvzp9a.execute-api.us-east-1.amazonaws.com/dev/`
+const BASE_URL = `https://api.libmon.com`
 let isValidated = false
 let counters: any = {}
 let libName = ""
@@ -26,16 +26,13 @@ export class Libmon {
         )
 
       // make a web request and verify OK
-      const resp = await axios.get(`${BASE_URL}\\validate`, {
+      const resp = await axios.get(`${BASE_URL}\\valid`, {
         headers: { token, lib: libName },
       })
 
       if (resp.status === 200) isValidated = true
       if (resp.status === 204) isValidated = false
     } catch (ex) {
-      console.log(
-        "Libmon Server failed to give proper response. Authorizing..."
-      )
       isValidated = true
     }
     return isValidated

@@ -1,18 +1,9 @@
 
-<p align="center">
-  <img src="https://libmon.com/images/libmon.svg" alt="Libmon Logo"/>
-</p>
+![Libmon logo](https://libmon.com/images/libmon.svg)
 
+The Libmon Library helps you monetize your library by handling token validation and enforcing usage limits for a library. 
 
----
-title: "Preparing to Publish"
-date: 2021-02-20T14:20:19-06:00
-draft: false
----
-
-The Libmon Library handles token validation and usage limits for a library.
-
-It is [open-source](https://github.com/getamna/libmon).
+It validates tokens against the [Libmon](https://libmon.com) service.
 
 Unfortunately, the library does not work without make a call to the internet. 
 
@@ -28,7 +19,7 @@ const { Libmon } = require("libmon")
 Libmon.intialize("my-calculator-package")
 ```
 
-Libmon exposes a few methods such as `crash()` and `increment()` to create internal counters that limit the amount of usage on a library without updgrading to a token.
+Libmon exposes a few methods such as `crash()` and `increment()` that can be used to set limits on a program.
 
 If a token is valid, Libmon methods will not crash a program.
 
@@ -79,6 +70,6 @@ The consumer of a library and purchaser of a token always has benefit of the dou
 
 
 ### Generating Tokens
-You can use our token generation service. To publish to Libmon, and get free tokens, simply [purchase here](https://libmon.com/#publish). It costs $20 for 100 tokens. 
+You can use our token generation service. To publish to Libmon, and get tokens, [register here](https://libmon.com/#publish).
 
-We can help you setup a payment portal so you can charge for access to your library.
+We can help you setup a payment portal, and you can monetize your library.

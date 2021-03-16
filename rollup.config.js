@@ -12,7 +12,7 @@ export default {
     output: {
         dir: "./dist",
 
-        format: "iife",
+        format: "umd",
     },
     plugins: [
         typescript({
